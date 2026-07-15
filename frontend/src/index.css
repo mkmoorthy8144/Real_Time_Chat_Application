@@ -1,0 +1,80 @@
+:root {
+  --gradient-main: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #ec4899 100%);
+  --gradient-btn: linear-gradient(135deg, #6d28d9, #ec4899);
+  --gradient-sent: linear-gradient(135deg, #7c3aed, #ec4899);
+  --color-surface: #ffffff;
+  --color-bg: #f5f3ff;
+  --color-text: #1f2333;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-online: #10b981;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --shadow-soft: 0 15px 35px rgba(109, 40, 217, 0.18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gradient-text {
+  background: var(--gradient-btn);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-banner {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
